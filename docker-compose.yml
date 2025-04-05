@@ -8,6 +8,8 @@ services:
       - external_network
     volumes:
       - ./app:/app
+    ports:
+      - '127.0.0.1:5000:5000'
   
 networks:
   external_network:
