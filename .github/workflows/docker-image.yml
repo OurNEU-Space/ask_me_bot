@@ -27,7 +27,7 @@ jobs:
         images: ghcr.io/${{ github.repository_owner }}/ask_me_bot
         tags: |
           type=raw,value=latest,enable={{is_default_branch}}
-          type=edge,branch=docker-branch
+          type=edge,branch=master
           type=sha,prefix=,format=long
 
     - uses: docker/build-push-action@v4
