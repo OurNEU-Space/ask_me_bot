@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ask_me_bot:
+    container_name: ask_me_bot
+    restart: always
+    image: ghcr.io/ourneu-space/ask_me_bot:latest
+    networks:
+      - external_network
+    volumes:
+      - ./app:/app
+  
+networks:
+  external_network:
