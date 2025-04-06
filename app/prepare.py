@@ -1,4 +1,3 @@
-from ask import db, app
 from config import Config
 import os
 
@@ -8,6 +7,8 @@ def prepare():
     This includes creating the necessary directories and files,
     and initializing the database.
     """
+    from ask import db, app
+
     with open('static/ask.html', 'r') as f1:
         html = f1.read()
 
