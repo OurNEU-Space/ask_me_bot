@@ -11,7 +11,15 @@ import string
 import datetime
 from dateutil.tz import tzlocal
 from config import Config
+from prepare import prepare
+import os
 
+# Prepare the environment for the application
+
+if not os.path.exists('static/index.html'):
+    prepare()
+
+# Initialize Flask application
 
 app = Flask(__name__)
 app.config.from_object(Config)
