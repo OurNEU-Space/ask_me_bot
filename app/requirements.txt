@@ -1,4 +1,5 @@
 Flask~=2.2
+uwsgi
 Flask_SQLAlchemy~=3.0
 Flask_Limiter~=3.3
 Mastodon.py~=1.8
